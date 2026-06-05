@@ -13,6 +13,11 @@ public class PruebaReportes {
         GestorReportes gestorExcel = new GestorReportes(new ReporteExcel());
         gestorExcel.producirReporte("Inventario Marzo 2024");
 
+        System.out.println("\n--------------------------------------------------------------\n");
+
+        GestorReportes gestorWord = new GestorReportes(new ReporteWord());
+        gestorWord.producirReporte("Documento de prueba");
+
         System.out.println("\n==============================================================\n");
     }
 }
